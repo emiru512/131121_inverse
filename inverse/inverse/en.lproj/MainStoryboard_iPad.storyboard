@@ -23,12 +23,12 @@
                                 <items>
                                     <barButtonItem title="&lt;&lt;" style="plain" id="eOZ-tg-ozH">
                                         <connections>
-                                            <action selector="goBack" destination="tzM-u6-ovv" id="Bhp-pw-61m"/>
+                                            <action selector="pushGoBackButton:" destination="2" id="cmH-dn-ziZ"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title=">>" style="plain" id="LjR-NM-Dia">
                                         <connections>
-                                            <action selector="goForward" destination="tzM-u6-ovv" id="EG7-qd-0kb"/>
+                                            <action selector="pushGoForwardButton:" destination="2" id="bnw-AJ-iG1"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="refresh" id="3Ay-Ci-ixU">

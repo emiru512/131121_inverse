@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 //
 
 #define LOG(A, ...) NSLog(@"DEBUG: %s:%dline:%@", __PRETTY_FUNCTION__,__LINE__,[NSString stringWithFormat:A, ## __VA_ARGS__]);
@@ -23,9 +22,12 @@
 
 //
 
-@interface inverseViewController : UIViewController <UITextFieldDelegate>
+@interface inverseViewController : UIViewController <UIWebViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) IBOutlet UITextField *urlTextField;
 
+- (IBAction)pushGoBackButton:(id)sender;
+
+- (IBAction)pushGoForwardButton:(id)sender;
 
 @end
