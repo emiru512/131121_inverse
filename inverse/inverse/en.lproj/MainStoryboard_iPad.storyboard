@@ -36,16 +36,13 @@
                                             <action selector="reload" destination="tzM-u6-ovv" id="kS1-aP-yjt"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" id="lnn-uL-Z5P">
-                                        <searchBar key="customView" contentMode="redraw" barStyle="blackOpaque" placeholder="Search or type URL" id="zee-C1-Mye">
-                                            <rect key="frame" x="108" y="0.0" width="619" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                            <scopeButtonTitles>
-                                                <string>Title</string>
-                                                <string>Title</string>
-                                            </scopeButtonTitles>
-                                        </searchBar>
+                                    <barButtonItem style="plain" id="ORM-sg-J4u">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search or type URL" minimumFontSize="17" clearButtonMode="whileEditing" id="Brb-kI-tXg">
+                                            <rect key="frame" x="108" y="7" width="620" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
+                                        </textField>
                                     </barButtonItem>
                                     <barButtonItem title="■" style="plain" id="z2r-Vd-a7K"/>
                                 </items>
@@ -54,6 +51,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="urlTextField" destination="Brb-kI-tXg" id="SCR-K8-LUz"/>
                         <outlet property="webView" destination="tzM-u6-ovv" id="KYO-yy-tze"/>
                     </connections>
                 </viewController>
@@ -61,14 +59,6 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="inverseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/inverseViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
