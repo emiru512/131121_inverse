@@ -22,12 +22,12 @@
 
 //
 
-@interface inverseViewController : UIViewController <UIWebViewDelegate, UITextFieldDelegate>
+@interface inverseViewController : UIViewController <UIWebViewDelegate, UITextFieldDelegate/*, UIGestureRecognizerDelegate*/>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) IBOutlet UITextField *urlTextField;
+@property (strong, nonatomic) IBOutlet UITextView *textView;
 
 - (IBAction)pushGoBackButton:(id)sender;
-
 - (IBAction)pushGoForwardButton:(id)sender;
 
 @end
